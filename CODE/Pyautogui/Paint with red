@@ -1,0 +1,18 @@
+from PIL import Image
+import subprocess
+import os
+import time
+
+# Red background image create pannum
+image = Image.new("RGB", (1200, 700), "red")
+
+# Image save panna location
+file_path = os.path.join(os.getcwd(), "suren_ai_red_background.png")
+image.save(file_path)
+
+# Paint-la image open pannum
+subprocess.Popen(["mspaint.exe", file_path])
+
+time.sleep(3)
+
+print("Paint opened with red background")
