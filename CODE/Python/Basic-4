@@ -1,0 +1,8 @@
+name = input("Student Name: ")
+course = input("Course: ")
+fees = int(input("Fees Paid: "))
+
+print("\n----- Student Details -----")
+print("Name   :", name)
+print("Course :", course)
+print("Fees   :", fees)
